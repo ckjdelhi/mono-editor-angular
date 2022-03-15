@@ -1,0 +1,10 @@
+<h1>ngx-monaco-editor example</h1>
+<div style="height: 80%">
+  <ngx-monaco-editor
+    [options]="editorOptions"
+    [(ngModel)]="code"
+    (init)="editorInit($event)"
+    (onInit)="onInit($event)"
+  ></ngx-monaco-editor>
+</div>
+output: {{ code }}
